@@ -1,0 +1,15 @@
+{
+  "name": "teres-plugin",
+  "owner": {
+    "name": "Seth Hillestad",
+    "email": "sethhillestad707@gmail.com"
+  },
+  "description": "Teres — make AI-built websites that nobody can tell were built by AI. The build + learn skills and the Teres MCP server, for AI website agencies.",
+  "plugins": [
+    {
+      "name": "teres",
+      "source": "./",
+      "description": "Teres build + learn skills and the Teres MCP server connection (requires a TERES_API_KEY env var)."
+    }
+  ]
+}
