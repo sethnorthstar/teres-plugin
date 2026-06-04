@@ -22,7 +22,7 @@ You are building a production website for a local business using the **Teres** s
 3. **Work the plan's `process` in order**, using the Teres tools as it directs:
    - Pick **exactly one** register from the plan and keep every choice consistent with it.
    - **Differentiate:** your build must differ from `differentiation.recent_builds` on **at least 4 of the 7 axes** (nav, footer, section_order, color_arch, body_font, motion, hero).
-   - For each section, call **`search_patterns(industry, kind)`** then **`get_pattern(id)`** — build **only** from returned patterns; never invent or substitute one.
+   - For each section, pick from the curated **`patterns`** set in the plan (scoped to the industry, grouped by kind), then call **`get_pattern(id)`** for the full spec — build **only** from these; never invent or substitute one. (There is no catalog-browse tool.)
    - Call **`get_images(trade, slot)`** for every photo slot (prefer `used_recently:false`; real client photos always win).
    - Write copy in a specific, human voice (call `get_copy_guide` for the rules + industry calibration). Build on the exact stack the plan specifies.
 4. **Self-check and verify** — call `check_slop` and confirm the build violates none of the bans, every choice fits the one register, the build compiles and the homepage renders.

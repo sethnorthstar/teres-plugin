@@ -11,7 +11,7 @@ When the user asks to build / make / create a website, landing page, or site:
 
 1. Call `plan_build` first with the brief. Follow the returned plan exactly (process, registers, your recent builds, the stack).
 2. Pick exactly one design register; the build must differ from your recent builds on at least 4 of the 7 axes (nav, footer, section order, color architecture, body font, motion, hero).
-3. Use `search_patterns` + `get_pattern` for components (build only from returned patterns), `get_images` for photos, `get_copy_guide` before writing copy, `check_slop` at the self-check step.
+3. Pick components from the curated `patterns` set in plan_build's response (no catalog-browse tool), then `get_pattern(id)` for each; `get_images` for photos, `get_copy_guide` before writing copy, `check_slop` at the self-check step.
 4. Build on the stack the plan specifies; verify it compiles.
 5. Call `record_build` with the 7 axes you used.
 
