@@ -1,0 +1,8 @@
+---
+description: Teres learn mode — study a website and add its components to the Teres library
+alwaysApply: false
+---
+
+# Teres — Learn Mode
+
+When the user wants to study / learn from a website (to add components to the Teres library): extract its distinct components (markup, structure, a short note on what works, proposed tags) and relay them via `submit_site` with the source URL. They land in the user's private library; the server gates what reaches the shared library. Extract liberally — capturing more good components improves future builds.
