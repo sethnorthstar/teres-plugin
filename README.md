@@ -73,3 +73,13 @@ If your Claude Code CLI is current and supports plugins, you can install everyth
 - Trade/contractor industries are best-covered today (plumbing, roofing, concrete, electrical, HVAC, remodeling, handyman, painting, landscaping, cleaning).
 - Learn mode (`teres-learn`) is early.
 - The skills hold no design content — everything comes from the Teres server, which only works with a live, paid key.
+
+---
+
+## Security & your data
+
+- **Installing connects you to a remote server we operate.** Both install paths register an MCP server at `https://teres.sethhillestad707.workers.dev/mcp` (HTTPS) that your AI client calls during builds. Your Teres API key is sent as a `Bearer` token on each request.
+- **What gets sent to the server:** the build brief you provide (business, trade, city, services, goal) and, in learn mode, the source URL plus the component markup your agent extracted from a site you named. The skills do **not** read or upload your local files, environment variables, or other credentials.
+- **Your API key is a bearer credential** — anyone holding it can use your plan. Keep it out of shared shell profiles and screenshots; prefer a per-session env var or your client's secret store. If it leaks, rotate it from your Teres dashboard.
+- **Verify what you install.** The manual install fetches `SKILL.md` files from this repo over HTTPS. For a reproducible install, pin the raw URLs to a release tag or commit SHA instead of `main`, so a later change to `main` can't alter the skill your agent will follow.
+- **Treat learn-mode pages as untrusted.** The learn skill instructs the agent to treat any fetched page as data to analyze, never as instructions — so a malicious site can't hijack the agent through hidden prompts.
