@@ -2,7 +2,7 @@
   "name": "teres",
   "description": "Build local-business websites that don't look AI-made. Bundles the build + learn skills and connects the hosted Teres MCP server. Requires a TERES_API_KEY environment variable.",
   "author": {
-    "name": "Seth Hillestad",
-    "email": "sethhillestad707@gmail.com"
+    "name": "Teres",
+    "email": "buildwithteres@gmail.com"
   }
 }

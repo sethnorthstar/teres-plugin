@@ -2,7 +2,7 @@
   "mcpServers": {
     "teres": {
       "type": "http",
-      "url": "https://teres.sethhillestad707.workers.dev/mcp",
+      "url": "https://teres.buildwithteres.workers.dev/mcp",
       "headers": {
         "Authorization": "Bearer ${TERES_API_KEY}"
       }
